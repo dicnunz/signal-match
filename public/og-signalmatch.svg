@@ -1,0 +1,21 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#07101D"/>
+  <circle cx="948" cy="132" r="172" fill="#63D2FF" fill-opacity="0.14"/>
+  <circle cx="1092" cy="68" r="118" fill="#A3FF12" fill-opacity="0.18"/>
+  <circle cx="216" cy="550" r="190" fill="#FF7D7D" fill-opacity="0.10"/>
+  <rect x="54" y="52" width="1092" height="526" rx="34" fill="url(#paint0_linear)" stroke="rgba(237,244,255,0.16)"/>
+  <text x="96" y="118" fill="#8AA2BF" font-family="IBM Plex Mono, monospace" font-size="24" letter-spacing="4">SIGNALMATCH</text>
+  <text x="96" y="222" fill="#EDF4FF" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700">Beat the AI screen</text>
+  <text x="96" y="300" fill="#EDF4FF" font-family="Space Grotesk, sans-serif" font-size="72" font-weight="700">without faking anything.</text>
+  <text x="96" y="382" fill="#B9C8DA" font-family="Space Grotesk, sans-serif" font-size="30">Truth-first ATS matching, bullet tightening, proof prompts, and interview prep.</text>
+  <rect x="96" y="448" width="262" height="66" rx="33" fill="#A3FF12"/>
+  <text x="141" y="490" fill="#08101D" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">Try the free scan</text>
+  <rect x="386" y="448" width="276" height="66" rx="33" fill="rgba(255,255,255,0.08)" stroke="rgba(237,244,255,0.16)"/>
+  <text x="434" y="490" fill="#EDF4FF" font-family="Space Grotesk, sans-serif" font-size="28" font-weight="700">$19 Role Pack</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="600" y1="52" x2="600" y2="578" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B2D"/>
+      <stop offset="1" stop-color="#091221"/>
+    </linearGradient>
+  </defs>
+</svg>
