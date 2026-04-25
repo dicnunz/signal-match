@@ -2,6 +2,8 @@
 
 SignalMatch is a truth-first job-match product.
 
+![SignalMatch resume to job description visual](./public/generated/signalmatch-hero.png)
+
 The user pastes a resume and a job description. The app returns:
 
 - matched signals already visible to ATS or recruiter screens

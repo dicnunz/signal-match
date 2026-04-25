@@ -27,10 +27,10 @@ export const metadata: Metadata = {
     siteName: "SignalMatch",
     images: [
       {
-        url: "/og-signalmatch.svg",
-        width: 1200,
-        height: 630,
-        alt: "SignalMatch launch card",
+        url: `${siteConfig.githubPagesUrl}/generated/signalmatch-hero.png`,
+        width: 1536,
+        height: 1024,
+        alt: "SignalMatch resume to job description proof-lines visual",
       },
     ],
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "SignalMatch",
     description:
       "Beat the AI screen without faking anything.",
-    images: ["/og-signalmatch.svg"],
+    images: [`${siteConfig.githubPagesUrl}/generated/signalmatch-hero.png`],
   },
 };
 

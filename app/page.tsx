@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MatchWorkbench } from "@/components/match-workbench";
 import { demoJobDescription, demoResume } from "@/lib/jobmatch/demo";
 import { getBuyHref, hasBuyLink } from "@/lib/site";
@@ -18,7 +19,7 @@ export default function Home() {
               <span>Truth-first ATS job match tool</span>
             </div>
             <div className="space-y-4">
-              <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.07em] text-[var(--paper)] sm:text-6xl lg:text-7xl">
+              <h1 className="max-w-4xl text-5xl font-semibold tracking-normal text-[var(--paper)] sm:text-6xl lg:text-7xl">
                 Beat the AI screen without faking anything.
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-[var(--muted-strong)] sm:text-xl">
@@ -47,7 +48,7 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
                   Pain
                 </p>
-                <p className="mt-2 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+                <p className="mt-2 text-3xl font-semibold tracking-normal text-[var(--paper)]">
                   Crowded market
                 </p>
                 <p className="mt-3 text-sm leading-6 text-[var(--muted-strong)]">
@@ -59,7 +60,7 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.22em] text-[var(--accent)]">
                   Positioning
                 </p>
-                <p className="mt-2 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+                <p className="mt-2 text-3xl font-semibold tracking-normal text-[var(--paper)]">
                   Anti-hallucination
                 </p>
                 <p className="mt-3 text-sm leading-6 text-[var(--muted-strong)]">
@@ -71,7 +72,7 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.22em] text-[var(--cyan)]">
                   Money path
                 </p>
-                <p className="mt-2 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+                <p className="mt-2 text-3xl font-semibold tracking-normal text-[var(--paper)]">
                   $19 role packs
                 </p>
                 <p className="mt-3 text-sm leading-6 text-[var(--muted-strong)]">
@@ -83,15 +84,22 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="absolute -top-12 left-1/4 h-40 w-40 rounded-full bg-[radial-gradient(circle,_rgba(163,255,18,0.35),_transparent_70%)] blur-3xl" />
             <div className="relative flex h-full flex-col justify-between rounded-[1.75rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-5 backdrop-blur-md">
+              <Image
+                src="/generated/signalmatch-hero.png"
+                alt="SignalMatch resume to job description proof-lines visual"
+                width={1536}
+                height={1024}
+                priority
+                className="mb-5 aspect-[3/2] w-full rounded-[1.25rem] border border-[var(--line)] object-cover"
+              />
               <div>
                 <p className="font-mono text-xs uppercase tracking-[0.24em] text-[var(--muted)]">
                   Market pressure
                 </p>
                 <div className="mt-5 space-y-4">
                   <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-                    <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+                    <p className="text-4xl font-semibold tracking-normal text-[var(--paper)]">
                       80%
                     </p>
                     <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -100,7 +108,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-                    <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+                    <p className="text-4xl font-semibold tracking-normal text-[var(--paper)]">
                       93%
                     </p>
                     <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -109,7 +117,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-                    <p className="text-4xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+                    <p className="text-4xl font-semibold tracking-normal text-[var(--paper)]">
                       26%
                     </p>
                     <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -123,7 +131,7 @@ export default function Home() {
                 <p className="font-mono text-xs uppercase tracking-[0.22em] text-[var(--accent)]">
                   Angle
                 </p>
-                <p className="mt-2 text-lg font-semibold tracking-[-0.04em] text-[var(--paper)]">
+                <p className="mt-2 text-lg font-semibold tracking-normal text-[var(--paper)]">
                   Honest role packs for candidates under pressure.
                 </p>
                 <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -152,7 +160,7 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
             Paid product
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+          <h2 className="mt-3 text-3xl font-semibold tracking-normal text-[var(--paper)]">
             SignalMatch Role Pack
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--muted-strong)]">
@@ -162,7 +170,7 @@ export default function Home() {
           </p>
           <div className="mt-5 grid gap-3 md:grid-cols-2">
             <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.03em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 Inside
               </p>
               <ul className="mt-3 space-y-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -175,7 +183,7 @@ export default function Home() {
               </ul>
             </div>
             <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.03em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 Promise
               </p>
               <ul className="mt-3 space-y-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -214,7 +222,7 @@ export default function Home() {
           </p>
           <div className="mt-5 space-y-4">
             <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.03em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 1. Free scan
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -223,7 +231,7 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.03em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 2. $19 role pack
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -232,7 +240,7 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.03em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 3. $49 sprint
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -249,13 +257,13 @@ export default function Home() {
           <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
             Why this can sell
           </p>
-          <h2 className="mt-3 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+          <h2 className="mt-3 text-3xl font-semibold tracking-normal text-[var(--paper)]">
             It helps a stressed buyer get a more believable application out
             faster.
           </h2>
           <div className="mt-5 grid gap-4 md:grid-cols-3">
             <div className="rounded-[1.25rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.04em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 1. Immediate use
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -264,7 +272,7 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-[1.25rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.04em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 2. Clear differentiation
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -273,7 +281,7 @@ export default function Home() {
               </p>
             </div>
             <div className="rounded-[1.25rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
-              <p className="text-lg font-semibold tracking-[-0.04em] text-[var(--paper)]">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
                 3. Easy upgrade path
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -293,7 +301,7 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
                 Free
               </p>
-              <p className="mt-1 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+              <p className="mt-1 text-3xl font-semibold tracking-normal text-[var(--paper)]">
                 Keyword scan
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -304,7 +312,7 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
                 Main offer
               </p>
-              <p className="mt-1 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+              <p className="mt-1 text-3xl font-semibold tracking-normal text-[var(--paper)]">
                 $19 / role
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
@@ -316,7 +324,7 @@ export default function Home() {
               <p className="text-sm uppercase tracking-[0.18em] text-[var(--muted)]">
                 Upsell
               </p>
-              <p className="mt-1 text-3xl font-semibold tracking-[-0.05em] text-[var(--paper)]">
+              <p className="mt-1 text-3xl font-semibold tracking-normal text-[var(--paper)]">
                 $49 sprint
               </p>
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">

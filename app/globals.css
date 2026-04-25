@@ -26,10 +26,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-space-grotesk), sans-serif;
   background-image:
-    radial-gradient(circle at top left, rgba(99, 210, 255, 0.18), transparent 22%),
-    radial-gradient(circle at top right, rgba(163, 255, 18, 0.16), transparent 18%),
-    radial-gradient(circle at bottom center, rgba(255, 125, 125, 0.1), transparent 20%),
-    linear-gradient(180deg, rgba(9, 18, 33, 0.9), rgba(7, 16, 29, 1));
+    linear-gradient(180deg, rgba(9, 18, 33, 0.94), rgba(7, 16, 29, 1));
 }
 
 * {
