@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import { MatchReportPanel } from "@/components/match-report-panel";
 import { analyzeRoleMatch } from "@/lib/jobmatch/engine";
-import { getBuyHref } from "@/lib/site";
+import { getBuyHref, getSupportReceiptHref, hasBuyLink } from "@/lib/site";
 
 type MatchWorkbenchProps = {
   initialResume: string;
@@ -15,6 +15,8 @@ export function MatchWorkbench({
   initialJobDescription,
 }: MatchWorkbenchProps) {
   const buyHref = getBuyHref();
+  const readyToSell = hasBuyLink();
+  const supportReceiptHref = getSupportReceiptHref();
   const [resumeText, setResumeText] = useState(initialResume);
   const [jobDescription, setJobDescription] = useState(initialJobDescription);
   const [report, setReport] = useState(
@@ -127,11 +129,17 @@ export function MatchWorkbench({
           </button>
           <a
             className="rounded-full border border-[rgba(163,255,18,0.24)] bg-[rgba(163,255,18,0.08)] px-5 py-3 text-center text-sm font-semibold text-[var(--paper)] transition hover:border-[var(--accent)]"
-            href={buyHref}
+            href={readyToSell ? buyHref : supportReceiptHref}
           >
-            Get the $19 role pack
+            {readyToSell ? "Get the $19 role pack" : "Optional $5 support receipt"}
           </a>
         </div>
+        {!readyToSell ? (
+          <p className="mt-3 text-sm leading-6 text-[var(--muted)]">
+            Not the role pack; this supports the free scan while checkout is
+            being connected.
+          </p>
+        ) : null}
 
         {error ? (
           <div className="mt-4 rounded-[1.1rem] border border-[rgba(255,125,125,0.28)] bg-[rgba(255,125,125,0.08)] p-4 text-sm leading-6 text-[var(--paper)]">

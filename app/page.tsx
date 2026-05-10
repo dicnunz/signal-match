@@ -1,10 +1,11 @@
 import Image from "next/image";
 import { MatchWorkbench } from "@/components/match-workbench";
 import { demoJobDescription, demoResume } from "@/lib/jobmatch/demo";
-import { getBuyHref, hasBuyLink } from "@/lib/site";
+import { getBuyHref, getSupportReceiptHref, hasBuyLink } from "@/lib/site";
 
 export default function Home() {
   const buyHref = getBuyHref();
+  const supportReceiptHref = getSupportReceiptHref();
   const readyToSell = hasBuyLink();
 
   return (
@@ -198,9 +199,9 @@ export default function Home() {
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <a
               className="rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-[rgba(163,255,18,0.88)]"
-              href={buyHref}
+              href={readyToSell ? buyHref : supportReceiptHref}
             >
-              Buy for $19
+              {readyToSell ? "Buy for $19" : "Optional $5 support receipt"}
             </a>
             <a
               className="rounded-full border border-[var(--line)] bg-[rgba(255,255,255,0.04)] px-5 py-3 text-sm font-semibold text-[var(--paper)] transition hover:border-[var(--cyan)]"
@@ -211,7 +212,9 @@ export default function Home() {
           </div>
           {!readyToSell ? (
             <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
-              Checkout is being connected from the Gumroad draft now.
+              The $19 role-pack checkout is still being connected. The receipt
+              link is optional support for the free scan and does not unlock the
+              role pack.
             </p>
           ) : null}
         </div>
