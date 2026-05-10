@@ -76,6 +76,7 @@ The cleanest first launch is:
 - free keyword scan
 - $19 one-role pack
 - $49 interview sprint upsell
+- $39 Agent Browser Operator OS for the separate builder/operator audience
 
 Do not overbuild checkout, accounts, or saved history before validating demand.
 The immediate value is the report quality and positioning.
@@ -85,3 +86,11 @@ https://nicdunz.gumroad.com/l/smrimu
 
 That receipt is not the $19 role pack. It is only a lightweight way to support
 the build if SignalMatch saved you time or gave you a useful application angle.
+
+Separate builder route:
+https://nicdunz.gumroad.com/l/agent-browser-operator-os
+
+Agent Browser Operator OS is a $39 self-serve material route for browser-agent
+operator workflows. It is not the SignalMatch Role Pack and it does not include
+Chrome plugin repair, guaranteed automation, account access, custom setup,
+calls, or public posting without human approval.

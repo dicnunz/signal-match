@@ -1,11 +1,17 @@
 import Image from "next/image";
 import { MatchWorkbench } from "@/components/match-workbench";
 import { demoJobDescription, demoResume } from "@/lib/jobmatch/demo";
-import { getBuyHref, getSupportReceiptHref, hasBuyLink } from "@/lib/site";
+import {
+  getAgentBrowserOperatorOsHref,
+  getBuyHref,
+  getSupportReceiptHref,
+  hasBuyLink,
+} from "@/lib/site";
 
 export default function Home() {
   const buyHref = getBuyHref();
   const supportReceiptHref = getSupportReceiptHref();
+  const agentBrowserOperatorOsHref = getAgentBrowserOperatorOsHref();
   const readyToSell = hasBuyLink();
 
   return (
@@ -249,6 +255,90 @@ export default function Home() {
               <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
                 Seven-day upgrade for candidates who want a structured weekly
                 application cycle and tighter interview stories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="grid gap-4 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="rounded-[1.8rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-6 shadow-[0_18px_70px_rgba(2,8,24,0.32)]">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--muted)]">
+            Builder support route
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-normal text-[var(--paper)]">
+            Agent Browser Operator OS
+          </h2>
+          <p className="mt-3 max-w-2xl text-sm leading-7 text-[var(--muted-strong)]">
+            A separate $39 self-serve route for people who want the operator
+            workflow behind browser-agent work: planning, boundaries, evidence,
+            and handoff material. It is not the SignalMatch role pack and it
+            does not change the free scan.
+          </p>
+          <div className="mt-5 grid gap-3 md:grid-cols-2">
+            <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
+                Included
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-6 text-[var(--muted-strong)]">
+                <li>• self-serve operator materials</li>
+                <li>• browser-agent workflow structure</li>
+                <li>• evidence and handoff boundaries</li>
+                <li>• practical execution checklists</li>
+              </ul>
+            </div>
+            <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
+                Boundaries
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-6 text-[var(--muted-strong)]">
+                <li>• no Chrome plugin repair</li>
+                <li>• no guaranteed automation</li>
+                <li>• no account access or custom setup</li>
+                <li>• no calls</li>
+                <li>• no public posting without human approval</li>
+              </ul>
+            </div>
+          </div>
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a
+              className="rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[var(--ink)] transition hover:bg-[rgba(163,255,18,0.88)]"
+              href={agentBrowserOperatorOsHref}
+            >
+              Get Agent Browser Operator OS for $39
+            </a>
+            <a
+              className="rounded-full border border-[var(--line)] bg-[rgba(255,255,255,0.04)] px-5 py-3 text-sm font-semibold text-[var(--paper)] transition hover:border-[var(--cyan)]"
+              href={supportReceiptHref}
+            >
+              Optional $5 support receipt
+            </a>
+          </div>
+        </div>
+
+        <div className="rounded-[1.8rem] border border-[var(--line)] bg-[linear-gradient(180deg,rgba(99,210,255,0.08),rgba(163,255,18,0.05))] p-6 shadow-[0_18px_70px_rgba(2,8,24,0.32)]">
+          <p className="text-xs uppercase tracking-[0.22em] text-[var(--cyan)]">
+            What it is not
+          </p>
+          <div className="mt-5 space-y-4">
+            <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-4">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
+                Not a managed service
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
+                The $39 route is downloadable material only. It does not include
+                live implementation, credentials, private account work, or
+                debugging another browser extension install.
+              </p>
+            </div>
+            <div className="rounded-[1.2rem] border border-[var(--line)] bg-[rgba(255,255,255,0.05)] p-4">
+              <p className="text-lg font-semibold tracking-normal text-[var(--paper)]">
+                Not the unfinished role pack
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[var(--muted-strong)]">
+                The SignalMatch Role Pack remains a separate $19 product until
+                its real checkout is connected. This route is for the operator
+                workflow audience, not job-seeker application materials.
               </p>
             </div>
           </div>

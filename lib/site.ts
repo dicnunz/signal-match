@@ -4,6 +4,8 @@ export const siteConfig = {
   githubPagesUrl: "https://dicnunz.github.io/signal-match",
   gumroadUrl: "",
   supportReceiptUrl: "https://nicdunz.gumroad.com/l/smrimu",
+  agentBrowserOperatorOsUrl:
+    "https://nicdunz.gumroad.com/l/agent-browser-operator-os",
 };
 
 export function getBuyHref() {
@@ -16,4 +18,8 @@ export function hasBuyLink() {
 
 export function getSupportReceiptHref() {
   return siteConfig.supportReceiptUrl;
+}
+
+export function getAgentBrowserOperatorOsHref() {
+  return siteConfig.agentBrowserOperatorOsUrl;
 }

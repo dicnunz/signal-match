@@ -1,11 +1,17 @@
 {
   "name": "signal-match",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
-  "funding": {
-    "type": "custom",
-    "url": "https://nicdunz.gumroad.com/l/smrimu"
-  },
+  "funding": [
+    {
+      "type": "custom",
+      "url": "https://nicdunz.gumroad.com/l/smrimu"
+    },
+    {
+      "type": "custom",
+      "url": "https://nicdunz.gumroad.com/l/agent-browser-operator-os"
+    }
+  ],
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
