@@ -79,3 +79,9 @@ The cleanest first launch is:
 
 Do not overbuild checkout, accounts, or saved history before validating demand.
 The immediate value is the report quality and positioning.
+
+Interim support route while the real role-pack checkout is not connected:
+https://nicdunz.gumroad.com/l/smrimu
+
+That receipt is not the $19 role pack. It is only a lightweight way to support
+the build if SignalMatch saved you time or gave you a useful application angle.
