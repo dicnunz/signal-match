@@ -1,5 +1,5 @@
 import type { MatchReport } from "@/lib/jobmatch/types";
-import { getBuyHref } from "@/lib/site";
+import { getBuyHref, getSupportReceiptHref, hasBuyLink } from "@/lib/site";
 
 type MatchReportPanelProps = {
   report: MatchReport;
@@ -13,6 +13,8 @@ export function MatchReportPanel({
   onCopyInterviewBank,
 }: MatchReportPanelProps) {
   const buyHref = getBuyHref();
+  const readyToSell = hasBuyLink();
+  const supportReceiptHref = getSupportReceiptHref();
   const timestamp = new Intl.DateTimeFormat("en-US", {
     dateStyle: "medium",
     timeStyle: "short",
@@ -157,6 +159,22 @@ export function MatchReportPanel({
             >
               Upgrade to the role pack
             </a>
+            {!readyToSell ? (
+              <div className="mt-3 rounded-[1rem] border border-[var(--line)] bg-[rgba(255,255,255,0.035)] p-3">
+                <a
+                  className="inline-flex text-sm font-semibold text-[var(--accent)] transition hover:text-[var(--paper)]"
+                  href={supportReceiptHref}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Optional $5 support receipt
+                </a>
+                <p className="mt-2 text-xs leading-5 text-[var(--muted)]">
+                  Not the role pack; it supports the free scan while checkout is
+                  being connected.
+                </p>
+              </div>
+            ) : null}
           </section>
 
           <section className="rounded-[1.35rem] border border-[var(--line)] bg-[rgba(255,255,255,0.04)] p-4">

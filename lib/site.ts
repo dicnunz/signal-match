@@ -3,6 +3,7 @@ export const siteConfig = {
   repoName: "signal-match",
   githubPagesUrl: "https://dicnunz.github.io/signal-match",
   gumroadUrl: "",
+  supportReceiptUrl: "https://nicdunz.gumroad.com/l/smrimu",
 };
 
 export function getBuyHref() {
@@ -11,4 +12,8 @@ export function getBuyHref() {
 
 export function hasBuyLink() {
   return Boolean(siteConfig.gumroadUrl);
+}
+
+export function getSupportReceiptHref() {
+  return siteConfig.supportReceiptUrl;
 }
